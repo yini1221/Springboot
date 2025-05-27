@@ -1,12 +1,11 @@
-package com.example.demo.model.entity;
+package com.example.demo.model.dto;
 
 import java.time.LocalDateTime;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import com.example.demo.model.entity.EventCategories;
+
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,11 +13,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-@Table(name = "event")
-public class Event {
+public class EventDto {
 	
-	@Id
 	private Integer eventId;
 
 	private String title;
@@ -35,8 +31,5 @@ public class Event {
 	
 	private String imageBase64;
 	
-	@ManyToOne()
-	@JoinColumn(name = "category_id")
 	private EventCategories eventCategories;
-	
 }
