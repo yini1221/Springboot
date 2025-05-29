@@ -15,21 +15,31 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class EventDto {
 	
-	private Integer eventId;
+	private Integer id;
+	
 	@NotEmpty
 	private String title;
+	
 	@NotEmpty
 	private String description;
+	
 	@NotEmpty
 	private String location;
 	
 	private LocalDateTime startTime;
 	
 	private LocalDateTime endTime;
+
+	private LocalDateTime createdAt;
+	
+	private LocalDateTime updatedAt;
+	
 	@NotNull
 	private Integer maxParticipants;
+	
 	@NotEmpty
 	private String imageBase64;
+	
 	@NotEmpty
 	private EventCategories eventCategories;
 

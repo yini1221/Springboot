@@ -58,15 +58,14 @@ public class EventServiceImpl implements EventService{
 		if(optEvent.isEmpty()) {
 			throw new EventNotFoundException("更新失敗: 活動 " + eventId + "不存在");
 		}
-		eventDto.setEventId(eventId);
+		eventDto.setId(eventId);
 		Event event = eventMapper.toEntity(eventDto);
 		eventRepository.save(event);
 	}
 
 	@Override
-	public void updateEvent(Integer eventId, String title, String description, String location, LocalDateTime startTime, LocalDateTime endTime,
-			Integer maxParticipants, String imageBase64, EventCategories eventCategories) {
-		EventDto eventDto = new EventDto(eventId, title, description, location, startTime, endTime, maxParticipants, imageBase64, eventCategories);
+	public void updateEvent(Integer eventId, String title, String description, String location, LocalDateTime startTime, LocalDateTime endTime, LocalDateTime createdAt, LocalDateTime updatedAt, Integer maxParticipants, String imageBase64, EventCategories eventCategories) {
+		EventDto eventDto = new EventDto(eventId, title, description, location, startTime, endTime, createdAt, updatedAt, maxParticipants, imageBase64, eventCategories);
 		updateEvent(eventId, eventDto);
 	}
 

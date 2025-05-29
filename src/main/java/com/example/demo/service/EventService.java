@@ -12,7 +12,6 @@ public interface EventService {
 	public EventDto addEventAndReturn(EventDto eventDto); // 新增活動
 	public void addEvent(String title, String description, String location, LocalDateTime startTime, LocalDateTime endTime, Integer maxParticipants, String imageBase64, EventCategories eventCategories); // 新增活動
 	public void updateEvent(Integer eventId, EventDto eventDto); // 修改活動
-	public void updateEvent(Integer eventId, String title, String description, String location, LocalDateTime startTime, LocalDateTime endTime,
-			Integer maxParticipants, String imageBase64, EventCategories eventCategories); // 修改活動
+	public void updateEvent(Integer eventId, String title, String description, String location, LocalDateTime startTime, LocalDateTime endTime, LocalDateTime createdAt, LocalDateTime updatedAt, Integer maxParticipants, String imageBase64, EventCategories eventCategories);// 修改活動
 	public void deleteEvent(Integer eventId); // 刪除活動
 }
