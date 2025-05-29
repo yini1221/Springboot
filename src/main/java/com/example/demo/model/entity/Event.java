@@ -18,7 +18,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @Table(name = "event")
@@ -47,16 +46,18 @@ public class Event {
 	@Lob
 	private String imageBase64;
 	
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "category_id")
 	private EventCategories eventCategories;
 	
+	// 在建立 Event 時會自動產出當下的系統時間
 	@PrePersist
 	protected void onCreate() {
 		createdAt = LocalDateTime.now();
 		updatedAt = LocalDateTime.now();
 	}
-	
+
+	// 在更新 Event 時會自動產出當下更新的系統時間
 	@PreUpdate
 	protected void onUpdate() {
 		updatedAt = LocalDateTime.now();

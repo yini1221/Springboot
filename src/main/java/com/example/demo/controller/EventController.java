@@ -39,6 +39,12 @@ public class EventController {
 		return ResponseEntity.ok(ApiResponse.success("新增成功", createdEvent));
 	}
 	
+	@GetMapping("/{eventId}")
+	public ResponseEntity<ApiResponse<EventDto>> getEvent(@PathVariable Integer eventId){
+		EventDto eventDto = eventService.getEventById(eventId);
+		return ResponseEntity.ok(ApiResponse.success("查詢成功", eventDto));
+	}
+	
 	@PutMapping("/{eventId}")
 	public ResponseEntity<ApiResponse<EventDto>> updateEvent(@PathVariable Integer eventId, @Valid @RequestBody EventDto eventDto) {
 		eventService.updateEvent(eventId, eventDto);

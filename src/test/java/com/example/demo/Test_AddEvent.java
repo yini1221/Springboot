@@ -2,8 +2,6 @@ package com.example.demo;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.time.LocalDateTime;
 import java.util.Base64;
 import java.util.Optional;
@@ -29,7 +27,7 @@ public class Test_AddEvent{
 	@Test
 	public void addEvent(){
 		//尋找分類
-		Optional<EventCategories> optEventCategories = eventCategoriesRepository.findById(301);
+		Optional<EventCategories> optEventCategories = eventCategoriesRepository.findById(302);
 		if(optEventCategories.isEmpty()) {
 			System.out.println("查無此分類");
 			return;
@@ -39,9 +37,9 @@ public class Test_AddEvent{
 		LocalDateTime endTime = LocalDateTime.of(2025, 6, 7, 17, 0);
 				
 		Event event = new Event();
-		event.setTitle("【茶香繚繞・仕紳雅聚】手作茶香袋體驗");
-		event.setDescription("這是內容");
-		event.setLocation("這是地點");
+		event.setTitle("測試活動名稱");
+		event.setDescription("內容空值測試");
+		event.setLocation("地點空值測試");
 		event.setStartTime(startTime);
 		event.setEndTime(endTime);
 		event.setMaxParticipants(40);

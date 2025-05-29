@@ -64,8 +64,8 @@ public class EventServiceImpl implements EventService{
 	}
 
 	@Override
-	public void updateEvent(Integer eventId, String title, String description, String location, LocalDateTime startTime, LocalDateTime endTime, LocalDateTime createdAt, LocalDateTime updatedAt, Integer maxParticipants, String imageBase64, EventCategories eventCategories) {
-		EventDto eventDto = new EventDto(eventId, title, description, location, startTime, endTime, createdAt, updatedAt, maxParticipants, imageBase64, eventCategories);
+	public void updateEvent(Integer eventId, String title, String description, String location, LocalDateTime startTime, LocalDateTime endTime, Integer maxParticipants, String imageBase64, EventCategories eventCategories) {
+		EventDto eventDto = new EventDto(eventId, title, description, location, startTime, endTime, maxParticipants, imageBase64, eventCategories);
 		updateEvent(eventId, eventDto);
 	}
 
