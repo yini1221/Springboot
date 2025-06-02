@@ -2,6 +2,8 @@ package com.example.demo.model.entity;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -15,18 +17,18 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "event_categories")
 public class EventCategories {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer Id;
+	private Integer id;
 
 	@Column(name = "name")
 	private String categoryName;
 	
 	@OneToMany(mappedBy = "eventCategories")
+	@JsonIgnore
 	private List<Event> events;
 }
