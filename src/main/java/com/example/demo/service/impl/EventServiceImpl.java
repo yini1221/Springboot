@@ -74,9 +74,7 @@ public class EventServiceImpl implements EventService{
 	    Integer categoryId = eventDto.getEventCategory().getId();
 	    EventCategories category = eventCategoriesRepository.findById(categoryId)
 	            .orElseThrow(() -> new CategoryNotFoundException("查無此分類: " + categoryId));	 
-	    
 	    event.setEventCategories(category);
-	    
 		eventRepository.save(event);
 	}
 
