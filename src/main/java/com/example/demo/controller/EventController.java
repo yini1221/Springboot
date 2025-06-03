@@ -31,7 +31,7 @@ public class EventController {
 	@GetMapping
 	public ResponseEntity<ApiResponse<List<EventDto>>> findAllEvents() {
 		List<EventDto> eventDtos = eventService.findAllEvents();
-		String message = eventDtos.isEmpty() ? "查無活動" : "查詢成功123";
+		String message = eventDtos.isEmpty() ? "查無活動" : "查詢成功";
 		return ResponseEntity.ok(ApiResponse.success(message, eventDtos));
 	}
 	
