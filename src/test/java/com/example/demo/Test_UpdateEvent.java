@@ -39,12 +39,12 @@ public class Test_UpdateEvent {
 		}
 				
 		Event event = optEvent.get();
-		event.setTitle("測試修改名稱");
-		event.setDescription("測試修改內容");
-		event.setLocation("測試修改地點");
+		event.setTitle("♡ (粉紅湖)|油性粉彩創作");
+		event.setDescription("繪畫是一件美好有趣的事。 生活中有很多的快樂、煩悶都能透過簡單的手繪，將情感表達在作品裡，記錄心情或療癒自己。");
+		event.setLocation("台北市的租借空間");
 		
-		LocalDateTime startTime = LocalDateTime.of(2025, 7, 1, 8, 0);
-		LocalDateTime endTime = LocalDateTime.of(2025, 7, 1, 10, 0);				
+		LocalDateTime startTime = LocalDateTime.of(2025, 6, 22, 14, 0);
+		LocalDateTime endTime = LocalDateTime.of(2025, 6, 22, 16, 0);				
 		event.setStartTime(startTime);
 		event.setEndTime(endTime);
 		
