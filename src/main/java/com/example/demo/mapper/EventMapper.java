@@ -24,8 +24,8 @@ public class EventMapper {
             mapper.map(src -> src.getEventCategories().getId(),
                        (dest, value) -> dest.getEventCategory().setId((Integer) value));
 
-            mapper.map(src -> src.getEventCategories().getCategoryName(),
-                       (dest, value) -> dest.getEventCategory().setCategoryName((String) value));
+            mapper.map(src -> src.getEventCategories().getName(),
+                       (dest, value) -> dest.getEventCategory().setName((String) value));
         });
 
         // 反向映射 DTO -> Entity
@@ -37,7 +37,7 @@ public class EventMapper {
 	public EventDto toDto(Event event) {
 		// Entity 轉 DTO
 		EventDto dto = modelMapper.map(event, EventDto.class);
-		dto.setEventCategory(new EventCategoryDto(event.getEventCategories().getId(), event.getEventCategories().getCategoryName()));
+		dto.setEventCategory(new EventCategoryDto(event.getEventCategories().getId(), event.getEventCategories().getName()));
 		return dto;
 	}	
 

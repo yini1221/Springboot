@@ -23,7 +23,7 @@ public class Test_ReadEvent {
 		List<Event> events = eventRepository.findAll();
 		events.forEach(event -> {
 			System.out.printf("活動編號: %d, 活動名稱: %s%n活動地點: %s%n開始時間: %s%n結束時間: %s%n建立時間: %s%n更新時間: %s%n人數上限: %d%n 圖片:%s%n 活動分類: %s%n"
-							  , event.getId(), event.getTitle(), event.getLocation(), event.getStartTime(), event.getEndTime(), event.getCreatedAt(), event.getUpdatedAt(), event.getMaxParticipants(), event.getImageBase64(), event.getEventCategories().getCategoryName());
+							  , event.getId(), event.getTitle(), event.getLocation(), event.getStartTime(), event.getEndTime(), event.getCreatedAt(), event.getUpdatedAt(), event.getMaxParticipants(), event.getImageBase64(), event.getEventCategories().getName());
 		});
 	}
 }

@@ -26,7 +26,7 @@ public class EventCategories {
 	private Integer id;
 
 	@Column(name = "name")
-	private String categoryName;
+	private String name;
 	
 	@OneToMany(mappedBy = "eventCategories")
 	@JsonIgnore

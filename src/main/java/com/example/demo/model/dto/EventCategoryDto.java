@@ -11,11 +11,11 @@ public class EventCategoryDto {
 	@Id
 	private Integer id;
 
-	private String categoryName;
+	private String name;
 
 	public EventCategoryDto(Integer id, String categoryName) {
 		this.id = id;
-		this.categoryName = categoryName;
+		this.name = categoryName;
 	}
 		
 }

@@ -22,7 +22,7 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping(value = "/admin/events")
-@CrossOrigin(origins = {"http://localhost:5173/my-react-event/", "http://localhost:8084"}, allowCredentials = "true")
+@CrossOrigin(origins = "http://localhost:5173", allowCredentials = "true")
 public class EventController {
 
 	@Autowired
