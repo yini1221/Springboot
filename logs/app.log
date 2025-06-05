@@ -1,0 +1,681 @@
+2025-06-05T15:40:36.083+08:00  INFO 17400 --- [springboot-event] [main] c.e.d.Category.Test_AddEventCategories   : Starting Test_AddEventCategories using Java 21.0.6 with PID 17400 (started by NTPU in C:\Users\NTPU\git\Springboot)
+2025-06-05T15:40:36.084+08:00  INFO 17400 --- [springboot-event] [main] c.e.d.Category.Test_AddEventCategories   : No active profile set, falling back to 1 default profile: "default"
+2025-06-05T15:40:36.555+08:00  INFO 17400 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T15:40:36.556+08:00  INFO 17400 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-05T15:40:36.578+08:00  INFO 17400 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventCategoriesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T15:40:36.579+08:00  INFO 17400 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T15:40:36.579+08:00  INFO 17400 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 JDBC repository interfaces.
+2025-06-05T15:40:36.587+08:00  INFO 17400 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T15:40:36.587+08:00  INFO 17400 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05T15:40:36.609+08:00  INFO 17400 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 2 JPA repository interfaces.
+2025-06-05T15:40:36.887+08:00  INFO 17400 --- [springboot-event] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05T15:40:36.923+08:00  INFO 17400 --- [springboot-event] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-05T15:40:36.947+08:00  INFO 17400 --- [springboot-event] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-05T15:40:37.184+08:00  INFO 17400 --- [springboot-event] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05T15:40:37.206+08:00  INFO 17400 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-05T15:40:37.317+08:00  INFO 17400 --- [springboot-event] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6caa4dc5
+2025-06-05T15:40:37.318+08:00  INFO 17400 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-05T15:40:37.370+08:00  INFO 17400 --- [springboot-event] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-05T15:40:37.916+08:00  INFO 17400 --- [springboot-event] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05T15:40:37.919+08:00  INFO 17400 --- [springboot-event] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T15:40:38.737+08:00  INFO 17400 --- [springboot-event] [main] c.e.d.Category.Test_AddEventCategories   : Started Test_AddEventCategories in 2.885 seconds (process running for 3.744)
+2025-06-05T15:40:39.112+08:00  INFO 17400 --- [springboot-event] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T15:40:39.114+08:00  INFO 17400 --- [springboot-event] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-05T15:40:39.120+08:00  INFO 17400 --- [springboot-event] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-05T15:43:45.223+08:00  INFO 15404 --- [springboot-event] [main] c.e.d.Category.Test_ReadEventCategories  : Starting Test_ReadEventCategories using Java 21.0.6 with PID 15404 (started by NTPU in C:\Users\NTPU\git\Springboot)
+2025-06-05T15:43:45.224+08:00  INFO 15404 --- [springboot-event] [main] c.e.d.Category.Test_ReadEventCategories  : No active profile set, falling back to 1 default profile: "default"
+2025-06-05T15:43:45.633+08:00  INFO 15404 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T15:43:45.634+08:00  INFO 15404 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-05T15:43:45.656+08:00  INFO 15404 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventCategoriesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T15:43:45.657+08:00  INFO 15404 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T15:43:45.658+08:00  INFO 15404 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 JDBC repository interfaces.
+2025-06-05T15:43:45.665+08:00  INFO 15404 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T15:43:45.666+08:00  INFO 15404 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05T15:43:45.689+08:00  INFO 15404 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 2 JPA repository interfaces.
+2025-06-05T15:43:45.971+08:00  INFO 15404 --- [springboot-event] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05T15:43:46.009+08:00  INFO 15404 --- [springboot-event] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-05T15:43:46.031+08:00  INFO 15404 --- [springboot-event] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-05T15:43:46.238+08:00  INFO 15404 --- [springboot-event] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05T15:43:46.261+08:00  INFO 15404 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-05T15:43:46.371+08:00  INFO 15404 --- [springboot-event] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@17354708
+2025-06-05T15:43:46.372+08:00  INFO 15404 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-05T15:43:46.422+08:00  INFO 15404 --- [springboot-event] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-05T15:43:46.955+08:00  INFO 15404 --- [springboot-event] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05T15:43:46.957+08:00  INFO 15404 --- [springboot-event] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T15:43:47.758+08:00  INFO 15404 --- [springboot-event] [main] c.e.d.Category.Test_ReadEventCategories  : Started Test_ReadEventCategories in 2.768 seconds (process running for 3.347)
+2025-06-05T15:43:48.114+08:00  INFO 15404 --- [springboot-event] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T15:43:48.115+08:00  INFO 15404 --- [springboot-event] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-05T15:43:48.120+08:00  INFO 15404 --- [springboot-event] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-05T15:44:03.513+08:00  INFO 10156 --- [springboot-event] [main] c.e.d.Category.Test_ReadEventCategories  : Starting Test_ReadEventCategories using Java 21.0.6 with PID 10156 (started by NTPU in C:\Users\NTPU\git\Springboot)
+2025-06-05T15:44:03.514+08:00  INFO 10156 --- [springboot-event] [main] c.e.d.Category.Test_ReadEventCategories  : No active profile set, falling back to 1 default profile: "default"
+2025-06-05T15:44:03.915+08:00  INFO 10156 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T15:44:03.916+08:00  INFO 10156 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-05T15:44:03.938+08:00  INFO 10156 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventCategoriesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T15:44:03.939+08:00  INFO 10156 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T15:44:03.939+08:00  INFO 10156 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 JDBC repository interfaces.
+2025-06-05T15:44:03.947+08:00  INFO 10156 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T15:44:03.948+08:00  INFO 10156 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05T15:44:03.973+08:00  INFO 10156 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 2 JPA repository interfaces.
+2025-06-05T15:44:04.251+08:00  INFO 10156 --- [springboot-event] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05T15:44:04.287+08:00  INFO 10156 --- [springboot-event] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-05T15:44:04.312+08:00  INFO 10156 --- [springboot-event] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-05T15:44:04.520+08:00  INFO 10156 --- [springboot-event] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05T15:44:04.541+08:00  INFO 10156 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-05T15:44:04.654+08:00  INFO 10156 --- [springboot-event] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@682266d8
+2025-06-05T15:44:04.655+08:00  INFO 10156 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-05T15:44:04.704+08:00  INFO 10156 --- [springboot-event] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-05T15:44:05.235+08:00  INFO 10156 --- [springboot-event] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05T15:44:05.237+08:00  INFO 10156 --- [springboot-event] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T15:44:06.055+08:00  INFO 10156 --- [springboot-event] [main] c.e.d.Category.Test_ReadEventCategories  : Started Test_ReadEventCategories in 2.771 seconds (process running for 3.349)
+2025-06-05T15:44:06.413+08:00  INFO 10156 --- [springboot-event] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T15:44:06.415+08:00  INFO 10156 --- [springboot-event] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-05T15:44:06.419+08:00  INFO 10156 --- [springboot-event] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-05T15:48:44.124+08:00  INFO 17212 --- [springboot-event] [main] c.e.d.Category.Test_ReadEventCategories  : Starting Test_ReadEventCategories using Java 21.0.6 with PID 17212 (started by NTPU in C:\Users\NTPU\git\Springboot)
+2025-06-05T15:48:44.124+08:00  INFO 17212 --- [springboot-event] [main] c.e.d.Category.Test_ReadEventCategories  : No active profile set, falling back to 1 default profile: "default"
+2025-06-05T15:48:44.530+08:00  INFO 17212 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T15:48:44.530+08:00  INFO 17212 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-05T15:48:44.554+08:00  INFO 17212 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventCategoriesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T15:48:44.554+08:00  INFO 17212 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T15:48:44.555+08:00  INFO 17212 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 JDBC repository interfaces.
+2025-06-05T15:48:44.564+08:00  INFO 17212 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T15:48:44.564+08:00  INFO 17212 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05T15:48:44.587+08:00  INFO 17212 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 2 JPA repository interfaces.
+2025-06-05T15:48:44.904+08:00  INFO 17212 --- [springboot-event] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05T15:48:44.941+08:00  INFO 17212 --- [springboot-event] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-05T15:48:44.963+08:00  INFO 17212 --- [springboot-event] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-05T15:48:45.170+08:00  INFO 17212 --- [springboot-event] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05T15:48:45.191+08:00  INFO 17212 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-05T15:48:45.301+08:00  INFO 17212 --- [springboot-event] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77c692b4
+2025-06-05T15:48:45.303+08:00  INFO 17212 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-05T15:48:45.351+08:00  INFO 17212 --- [springboot-event] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-05T15:48:45.886+08:00  INFO 17212 --- [springboot-event] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05T15:48:45.888+08:00  INFO 17212 --- [springboot-event] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T15:48:46.708+08:00  INFO 17212 --- [springboot-event] [main] c.e.d.Category.Test_ReadEventCategories  : Started Test_ReadEventCategories in 2.812 seconds (process running for 3.406)
+2025-06-05T15:48:47.103+08:00  INFO 17212 --- [springboot-event] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T15:48:47.104+08:00  INFO 17212 --- [springboot-event] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-05T15:48:47.108+08:00  INFO 17212 --- [springboot-event] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-05T15:49:01.744+08:00  INFO 10068 --- [springboot-event] [main] c.e.d.Category.Test_ReadEventCategories  : Starting Test_ReadEventCategories using Java 21.0.6 with PID 10068 (started by NTPU in C:\Users\NTPU\git\Springboot)
+2025-06-05T15:49:01.745+08:00  INFO 10068 --- [springboot-event] [main] c.e.d.Category.Test_ReadEventCategories  : No active profile set, falling back to 1 default profile: "default"
+2025-06-05T15:49:02.156+08:00  INFO 10068 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T15:49:02.157+08:00  INFO 10068 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-05T15:49:02.180+08:00  INFO 10068 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventCategoriesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T15:49:02.180+08:00  INFO 10068 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T15:49:02.180+08:00  INFO 10068 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 JDBC repository interfaces.
+2025-06-05T15:49:02.188+08:00  INFO 10068 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T15:49:02.188+08:00  INFO 10068 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05T15:49:02.211+08:00  INFO 10068 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 2 JPA repository interfaces.
+2025-06-05T15:49:02.487+08:00  INFO 10068 --- [springboot-event] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05T15:49:02.524+08:00  INFO 10068 --- [springboot-event] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-05T15:49:02.549+08:00  INFO 10068 --- [springboot-event] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-05T15:49:02.762+08:00  INFO 10068 --- [springboot-event] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05T15:49:02.783+08:00  INFO 10068 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-05T15:49:02.896+08:00  INFO 10068 --- [springboot-event] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@682266d8
+2025-06-05T15:49:02.897+08:00  INFO 10068 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-05T15:49:02.946+08:00  INFO 10068 --- [springboot-event] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-05T15:49:03.485+08:00  INFO 10068 --- [springboot-event] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05T15:49:03.487+08:00  INFO 10068 --- [springboot-event] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T15:49:04.287+08:00  INFO 10068 --- [springboot-event] [main] c.e.d.Category.Test_ReadEventCategories  : Started Test_ReadEventCategories in 2.77 seconds (process running for 3.35)
+2025-06-05T15:49:04.657+08:00  INFO 10068 --- [springboot-event] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T15:49:04.658+08:00  INFO 10068 --- [springboot-event] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-05T15:49:04.662+08:00  INFO 10068 --- [springboot-event] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-05T15:49:14.621+08:00  INFO 1336 --- [springboot-event] [main] c.e.d.Category.Test_ReadEventCategories  : Starting Test_ReadEventCategories using Java 21.0.6 with PID 1336 (started by NTPU in C:\Users\NTPU\git\Springboot)
+2025-06-05T15:49:14.622+08:00  INFO 1336 --- [springboot-event] [main] c.e.d.Category.Test_ReadEventCategories  : No active profile set, falling back to 1 default profile: "default"
+2025-06-05T15:49:15.028+08:00  INFO 1336 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T15:49:15.029+08:00  INFO 1336 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-05T15:49:15.051+08:00  INFO 1336 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventCategoriesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T15:49:15.052+08:00  INFO 1336 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T15:49:15.052+08:00  INFO 1336 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 JDBC repository interfaces.
+2025-06-05T15:49:15.059+08:00  INFO 1336 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T15:49:15.060+08:00  INFO 1336 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05T15:49:15.081+08:00  INFO 1336 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 2 JPA repository interfaces.
+2025-06-05T15:49:15.360+08:00  INFO 1336 --- [springboot-event] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05T15:49:15.396+08:00  INFO 1336 --- [springboot-event] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-05T15:49:15.419+08:00  INFO 1336 --- [springboot-event] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-05T15:49:15.630+08:00  INFO 1336 --- [springboot-event] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05T15:49:15.654+08:00  INFO 1336 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-05T15:49:15.762+08:00  INFO 1336 --- [springboot-event] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13a268cd
+2025-06-05T15:49:15.763+08:00  INFO 1336 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-05T15:49:15.810+08:00  INFO 1336 --- [springboot-event] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-05T15:49:16.347+08:00  INFO 1336 --- [springboot-event] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05T15:49:16.349+08:00  INFO 1336 --- [springboot-event] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T15:49:17.163+08:00  INFO 1336 --- [springboot-event] [main] c.e.d.Category.Test_ReadEventCategories  : Started Test_ReadEventCategories in 2.773 seconds (process running for 3.372)
+2025-06-05T15:49:17.545+08:00  INFO 1336 --- [springboot-event] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T15:49:17.546+08:00  INFO 1336 --- [springboot-event] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-05T15:49:17.551+08:00  INFO 1336 --- [springboot-event] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-05T15:57:06.072+08:00  INFO 5752 --- [springboot-event] [main] c.e.d.C.Test_UpdateEventCategories       : Starting Test_UpdateEventCategories using Java 21.0.6 with PID 5752 (started by NTPU in C:\Users\NTPU\git\Springboot)
+2025-06-05T15:57:06.073+08:00  INFO 5752 --- [springboot-event] [main] c.e.d.C.Test_UpdateEventCategories       : No active profile set, falling back to 1 default profile: "default"
+2025-06-05T15:57:06.496+08:00  INFO 5752 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T15:57:06.497+08:00  INFO 5752 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-05T15:57:06.519+08:00  INFO 5752 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventCategoriesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T15:57:06.520+08:00  INFO 5752 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T15:57:06.521+08:00  INFO 5752 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 JDBC repository interfaces.
+2025-06-05T15:57:06.528+08:00  INFO 5752 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T15:57:06.529+08:00  INFO 5752 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05T15:57:06.550+08:00  INFO 5752 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 2 JPA repository interfaces.
+2025-06-05T15:57:06.829+08:00  INFO 5752 --- [springboot-event] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05T15:57:06.865+08:00  INFO 5752 --- [springboot-event] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-05T15:57:06.886+08:00  INFO 5752 --- [springboot-event] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-05T15:57:07.093+08:00  INFO 5752 --- [springboot-event] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05T15:57:07.116+08:00  INFO 5752 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-05T15:57:07.240+08:00  INFO 5752 --- [springboot-event] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b3546a3
+2025-06-05T15:57:07.241+08:00  INFO 5752 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-05T15:57:07.292+08:00  INFO 5752 --- [springboot-event] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-05T15:57:07.830+08:00  INFO 5752 --- [springboot-event] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05T15:57:07.832+08:00  INFO 5752 --- [springboot-event] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T15:57:08.615+08:00  INFO 5752 --- [springboot-event] [main] c.e.d.C.Test_UpdateEventCategories       : Started Test_UpdateEventCategories in 2.757 seconds (process running for 3.331)
+2025-06-05T15:57:08.931+08:00  INFO 5752 --- [springboot-event] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T15:57:08.932+08:00  INFO 5752 --- [springboot-event] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-05T15:57:08.936+08:00  INFO 5752 --- [springboot-event] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-05T15:57:15.865+08:00  INFO 18644 --- [springboot-event] [main] c.e.d.C.Test_UpdateEventCategories       : Starting Test_UpdateEventCategories using Java 21.0.6 with PID 18644 (started by NTPU in C:\Users\NTPU\git\Springboot)
+2025-06-05T15:57:15.867+08:00  INFO 18644 --- [springboot-event] [main] c.e.d.C.Test_UpdateEventCategories       : No active profile set, falling back to 1 default profile: "default"
+2025-06-05T15:57:16.280+08:00  INFO 18644 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T15:57:16.281+08:00  INFO 18644 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-05T15:57:16.303+08:00  INFO 18644 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventCategoriesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T15:57:16.304+08:00  INFO 18644 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T15:57:16.305+08:00  INFO 18644 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 JDBC repository interfaces.
+2025-06-05T15:57:16.312+08:00  INFO 18644 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T15:57:16.312+08:00  INFO 18644 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05T15:57:16.334+08:00  INFO 18644 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 2 JPA repository interfaces.
+2025-06-05T15:57:16.612+08:00  INFO 18644 --- [springboot-event] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05T15:57:16.648+08:00  INFO 18644 --- [springboot-event] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-05T15:57:16.672+08:00  INFO 18644 --- [springboot-event] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-05T15:57:16.879+08:00  INFO 18644 --- [springboot-event] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05T15:57:16.901+08:00  INFO 18644 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-05T15:57:17.013+08:00  INFO 18644 --- [springboot-event] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@682266d8
+2025-06-05T15:57:17.014+08:00  INFO 18644 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-05T15:57:17.064+08:00  INFO 18644 --- [springboot-event] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-05T15:57:17.596+08:00  INFO 18644 --- [springboot-event] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05T15:57:17.598+08:00  INFO 18644 --- [springboot-event] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T15:57:18.388+08:00  INFO 18644 --- [springboot-event] [main] c.e.d.C.Test_UpdateEventCategories       : Started Test_UpdateEventCategories in 2.745 seconds (process running for 3.332)
+2025-06-05T15:57:18.725+08:00  INFO 18644 --- [springboot-event] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T15:57:18.727+08:00  INFO 18644 --- [springboot-event] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-05T15:57:18.732+08:00  INFO 18644 --- [springboot-event] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-05T16:02:36.629+08:00  INFO 19820 --- [springboot-event] [main] c.e.d.C.Test_UpdateEventCategories       : Starting Test_UpdateEventCategories using Java 21.0.6 with PID 19820 (started by NTPU in C:\Users\NTPU\git\Springboot)
+2025-06-05T16:02:36.630+08:00  INFO 19820 --- [springboot-event] [main] c.e.d.C.Test_UpdateEventCategories       : No active profile set, falling back to 1 default profile: "default"
+2025-06-05T16:02:37.047+08:00  INFO 19820 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T16:02:37.048+08:00  INFO 19820 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-05T16:02:37.070+08:00  INFO 19820 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventCategoriesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T16:02:37.071+08:00  INFO 19820 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T16:02:37.072+08:00  INFO 19820 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 JDBC repository interfaces.
+2025-06-05T16:02:37.079+08:00  INFO 19820 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T16:02:37.080+08:00  INFO 19820 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05T16:02:37.100+08:00  INFO 19820 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
+2025-06-05T16:02:37.382+08:00  INFO 19820 --- [springboot-event] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05T16:02:37.419+08:00  INFO 19820 --- [springboot-event] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-05T16:02:37.441+08:00  INFO 19820 --- [springboot-event] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-05T16:02:37.648+08:00  INFO 19820 --- [springboot-event] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05T16:02:37.670+08:00  INFO 19820 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-05T16:02:37.780+08:00  INFO 19820 --- [springboot-event] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b3546a3
+2025-06-05T16:02:37.781+08:00  INFO 19820 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-05T16:02:37.833+08:00  INFO 19820 --- [springboot-event] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-05T16:02:38.400+08:00  INFO 19820 --- [springboot-event] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05T16:02:38.402+08:00  INFO 19820 --- [springboot-event] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T16:02:39.208+08:00  INFO 19820 --- [springboot-event] [main] c.e.d.C.Test_UpdateEventCategories       : Started Test_UpdateEventCategories in 2.795 seconds (process running for 3.371)
+2025-06-05T16:02:39.530+08:00  INFO 19820 --- [springboot-event] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T16:02:39.531+08:00  INFO 19820 --- [springboot-event] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-05T16:02:39.535+08:00  INFO 19820 --- [springboot-event] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-05T16:03:02.594+08:00  INFO 12236 --- [springboot-event] [main] c.e.d.C.Test_DeleteEventCategories       : Starting Test_DeleteEventCategories using Java 21.0.6 with PID 12236 (started by NTPU in C:\Users\NTPU\git\Springboot)
+2025-06-05T16:03:02.595+08:00  INFO 12236 --- [springboot-event] [main] c.e.d.C.Test_DeleteEventCategories       : No active profile set, falling back to 1 default profile: "default"
+2025-06-05T16:03:03.012+08:00  INFO 12236 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T16:03:03.013+08:00  INFO 12236 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-05T16:03:03.035+08:00  INFO 12236 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventCategoriesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T16:03:03.036+08:00  INFO 12236 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T16:03:03.037+08:00  INFO 12236 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 JDBC repository interfaces.
+2025-06-05T16:03:03.045+08:00  INFO 12236 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T16:03:03.045+08:00  INFO 12236 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05T16:03:03.067+08:00  INFO 12236 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 2 JPA repository interfaces.
+2025-06-05T16:03:03.343+08:00  INFO 12236 --- [springboot-event] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05T16:03:03.379+08:00  INFO 12236 --- [springboot-event] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-05T16:03:03.402+08:00  INFO 12236 --- [springboot-event] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-05T16:03:03.607+08:00  INFO 12236 --- [springboot-event] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05T16:03:03.628+08:00  INFO 12236 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-05T16:03:03.739+08:00  INFO 12236 --- [springboot-event] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c5ae8fd
+2025-06-05T16:03:03.741+08:00  INFO 12236 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-05T16:03:03.790+08:00  INFO 12236 --- [springboot-event] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-05T16:03:04.323+08:00  INFO 12236 --- [springboot-event] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05T16:03:04.325+08:00  INFO 12236 --- [springboot-event] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T16:03:05.133+08:00  INFO 12236 --- [springboot-event] [main] c.e.d.C.Test_DeleteEventCategories       : Started Test_DeleteEventCategories in 2.771 seconds (process running for 3.344)
+2025-06-05T16:03:05.439+08:00  INFO 12236 --- [springboot-event] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T16:03:05.440+08:00  INFO 12236 --- [springboot-event] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-05T16:03:05.444+08:00  INFO 12236 --- [springboot-event] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-05T16:03:11.601+08:00  INFO 14784 --- [springboot-event] [main] c.e.d.C.Test_DeleteEventCategories       : Starting Test_DeleteEventCategories using Java 21.0.6 with PID 14784 (started by NTPU in C:\Users\NTPU\git\Springboot)
+2025-06-05T16:03:11.602+08:00  INFO 14784 --- [springboot-event] [main] c.e.d.C.Test_DeleteEventCategories       : No active profile set, falling back to 1 default profile: "default"
+2025-06-05T16:03:12.016+08:00  INFO 14784 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T16:03:12.017+08:00  INFO 14784 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-05T16:03:12.039+08:00  INFO 14784 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventCategoriesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T16:03:12.040+08:00  INFO 14784 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T16:03:12.040+08:00  INFO 14784 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 JDBC repository interfaces.
+2025-06-05T16:03:12.048+08:00  INFO 14784 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T16:03:12.049+08:00  INFO 14784 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05T16:03:12.071+08:00  INFO 14784 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 2 JPA repository interfaces.
+2025-06-05T16:03:12.353+08:00  INFO 14784 --- [springboot-event] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05T16:03:12.389+08:00  INFO 14784 --- [springboot-event] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-05T16:03:12.411+08:00  INFO 14784 --- [springboot-event] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-05T16:03:12.617+08:00  INFO 14784 --- [springboot-event] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05T16:03:12.640+08:00  INFO 14784 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-05T16:03:12.753+08:00  INFO 14784 --- [springboot-event] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c5ae8fd
+2025-06-05T16:03:12.755+08:00  INFO 14784 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-05T16:03:12.805+08:00  INFO 14784 --- [springboot-event] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-05T16:03:13.389+08:00  INFO 14784 --- [springboot-event] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05T16:03:13.391+08:00  INFO 14784 --- [springboot-event] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T16:03:14.254+08:00  INFO 14784 --- [springboot-event] [main] c.e.d.C.Test_DeleteEventCategories       : Started Test_DeleteEventCategories in 2.868 seconds (process running for 3.443)
+2025-06-05T16:03:14.610+08:00  INFO 14784 --- [springboot-event] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T16:03:14.612+08:00  INFO 14784 --- [springboot-event] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-05T16:03:14.617+08:00  INFO 14784 --- [springboot-event] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-05T16:03:20.451+08:00  INFO 12188 --- [springboot-event] [main] c.e.d.C.Test_DeleteEventCategories       : Starting Test_DeleteEventCategories using Java 21.0.6 with PID 12188 (started by NTPU in C:\Users\NTPU\git\Springboot)
+2025-06-05T16:03:20.452+08:00  INFO 12188 --- [springboot-event] [main] c.e.d.C.Test_DeleteEventCategories       : No active profile set, falling back to 1 default profile: "default"
+2025-06-05T16:03:20.859+08:00  INFO 12188 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T16:03:20.860+08:00  INFO 12188 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-05T16:03:20.882+08:00  INFO 12188 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventCategoriesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T16:03:20.883+08:00  INFO 12188 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T16:03:20.884+08:00  INFO 12188 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 JDBC repository interfaces.
+2025-06-05T16:03:20.891+08:00  INFO 12188 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T16:03:20.891+08:00  INFO 12188 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05T16:03:20.913+08:00  INFO 12188 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 2 JPA repository interfaces.
+2025-06-05T16:03:21.195+08:00  INFO 12188 --- [springboot-event] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05T16:03:21.230+08:00  INFO 12188 --- [springboot-event] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-05T16:03:21.254+08:00  INFO 12188 --- [springboot-event] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-05T16:03:21.460+08:00  INFO 12188 --- [springboot-event] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05T16:03:21.482+08:00  INFO 12188 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-05T16:03:21.592+08:00  INFO 12188 --- [springboot-event] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b3546a3
+2025-06-05T16:03:21.594+08:00  INFO 12188 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-05T16:03:21.644+08:00  INFO 12188 --- [springboot-event] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-05T16:03:22.178+08:00  INFO 12188 --- [springboot-event] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05T16:03:22.180+08:00  INFO 12188 --- [springboot-event] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T16:03:22.987+08:00  INFO 12188 --- [springboot-event] [main] c.e.d.C.Test_DeleteEventCategories       : Started Test_DeleteEventCategories in 2.764 seconds (process running for 3.34)
+2025-06-05T16:03:23.299+08:00  INFO 12188 --- [springboot-event] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T16:03:23.301+08:00  INFO 12188 --- [springboot-event] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-05T16:03:23.305+08:00  INFO 12188 --- [springboot-event] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-05T16:18:30.699+08:00  INFO 18528 --- [springboot-event] [main] c.e.demo.SpringbootEventApplication      : Starting SpringbootEventApplication using Java 21.0.6 with PID 18528 (C:\Users\NTPU\git\Springboot\target\classes started by NTPU in C:\Users\NTPU\git\Springboot)
+2025-06-05T16:18:30.700+08:00  INFO 18528 --- [springboot-event] [main] c.e.demo.SpringbootEventApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-06-05T16:18:31.046+08:00  INFO 18528 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T16:18:31.047+08:00  INFO 18528 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-05T16:18:31.066+08:00  INFO 18528 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventCategoriesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T16:18:31.067+08:00  INFO 18528 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T16:18:31.068+08:00  INFO 18528 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 JDBC repository interfaces.
+2025-06-05T16:18:31.073+08:00  INFO 18528 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T16:18:31.074+08:00  INFO 18528 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05T16:18:31.098+08:00  INFO 18528 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2025-06-05T16:18:31.358+08:00  INFO 18528 --- [springboot-event] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2025-06-05T16:18:31.367+08:00  INFO 18528 --- [springboot-event] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-05T16:18:31.368+08:00  INFO 18528 --- [springboot-event] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-05T16:18:31.396+08:00  INFO 18528 --- [springboot-event] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-05T16:18:31.397+08:00  INFO 18528 --- [springboot-event] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 675 ms
+2025-06-05T16:18:31.483+08:00  INFO 18528 --- [springboot-event] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05T16:18:31.511+08:00  INFO 18528 --- [springboot-event] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-05T16:18:31.529+08:00  INFO 18528 --- [springboot-event] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-05T16:18:31.685+08:00  INFO 18528 --- [springboot-event] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05T16:18:31.702+08:00  INFO 18528 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-05T16:18:31.799+08:00  INFO 18528 --- [springboot-event] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63bca84d
+2025-06-05T16:18:31.800+08:00  INFO 18528 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-05T16:18:31.845+08:00  INFO 18528 --- [springboot-event] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-05T16:18:32.350+08:00  INFO 18528 --- [springboot-event] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05T16:18:32.352+08:00  INFO 18528 --- [springboot-event] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T16:18:32.958+08:00  INFO 18528 --- [springboot-event] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path '/'
+2025-06-05T16:18:32.963+08:00  INFO 18528 --- [springboot-event] [main] c.e.demo.SpringbootEventApplication      : Started SpringbootEventApplication in 2.505 seconds (process running for 2.851)
+2025-06-05T16:20:30.290+08:00  INFO 18528 --- [springboot-event] [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-05T16:20:30.290+08:00  INFO 18528 --- [springboot-event] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-05T16:20:30.291+08:00  INFO 18528 --- [springboot-event] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-05T17:14:34.245+08:00  INFO 18528 --- [springboot-event] [RMI TCP Connection(64)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-05T17:14:34.247+08:00  INFO 18528 --- [springboot-event] [RMI TCP Connection(64)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-05T17:14:34.249+08:00  INFO 18528 --- [springboot-event] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-05T17:14:34.251+08:00  INFO 18528 --- [springboot-event] [RMI TCP Connection(64)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T17:14:34.252+08:00  INFO 18528 --- [springboot-event] [RMI TCP Connection(64)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-05T17:14:34.272+08:00  INFO 18528 --- [springboot-event] [RMI TCP Connection(64)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-05T17:14:35.538+08:00  INFO 5680 --- [springboot-event] [main] c.e.demo.SpringbootEventApplication      : Starting SpringbootEventApplication using Java 21.0.6 with PID 5680 (C:\Users\NTPU\git\Springboot\target\classes started by NTPU in C:\Users\NTPU\git\Springboot)
+2025-06-05T17:14:35.539+08:00  INFO 5680 --- [springboot-event] [main] c.e.demo.SpringbootEventApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-06-05T17:14:35.870+08:00  INFO 5680 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T17:14:35.870+08:00  INFO 5680 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-05T17:14:35.888+08:00  INFO 5680 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventCategoriesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T17:14:35.889+08:00  INFO 5680 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T17:14:35.890+08:00  INFO 5680 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 JDBC repository interfaces.
+2025-06-05T17:14:35.895+08:00  INFO 5680 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T17:14:35.896+08:00  INFO 5680 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05T17:14:35.912+08:00  INFO 5680 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2025-06-05T17:14:36.202+08:00  INFO 5680 --- [springboot-event] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2025-06-05T17:14:36.212+08:00  INFO 5680 --- [springboot-event] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-05T17:14:36.212+08:00  INFO 5680 --- [springboot-event] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-05T17:14:36.244+08:00  INFO 5680 --- [springboot-event] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-05T17:14:36.244+08:00  INFO 5680 --- [springboot-event] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 685 ms
+2025-06-05T17:14:36.336+08:00  INFO 5680 --- [springboot-event] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05T17:14:36.382+08:00  INFO 5680 --- [springboot-event] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-05T17:14:36.406+08:00  INFO 5680 --- [springboot-event] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-05T17:14:36.586+08:00  INFO 5680 --- [springboot-event] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05T17:14:36.607+08:00  INFO 5680 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-05T17:14:36.701+08:00  INFO 5680 --- [springboot-event] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63bca84d
+2025-06-05T17:14:36.702+08:00  INFO 5680 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-05T17:14:36.754+08:00  INFO 5680 --- [springboot-event] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-05T17:14:37.367+08:00  INFO 5680 --- [springboot-event] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05T17:14:37.369+08:00  INFO 5680 --- [springboot-event] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T17:14:38.017+08:00  INFO 5680 --- [springboot-event] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path '/'
+2025-06-05T17:14:38.021+08:00  INFO 5680 --- [springboot-event] [main] c.e.demo.SpringbootEventApplication      : Started SpringbootEventApplication in 2.711 seconds (process running for 3.042)
+2025-06-05T17:14:38.234+08:00  INFO 5680 --- [springboot-event] [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-05T17:14:38.234+08:00  INFO 5680 --- [springboot-event] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-05T17:14:38.235+08:00  INFO 5680 --- [springboot-event] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-05T17:33:46.574+08:00  INFO 5680 --- [springboot-event] [RMI TCP Connection(28)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-05T17:33:46.576+08:00  INFO 5680 --- [springboot-event] [RMI TCP Connection(28)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-05T17:33:46.583+08:00  INFO 5680 --- [springboot-event] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-05T17:33:46.585+08:00  INFO 5680 --- [springboot-event] [RMI TCP Connection(28)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T17:33:46.586+08:00  INFO 5680 --- [springboot-event] [RMI TCP Connection(28)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-05T17:33:46.589+08:00  INFO 5680 --- [springboot-event] [RMI TCP Connection(28)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-05T17:33:47.843+08:00  INFO 17472 --- [springboot-event] [main] c.e.demo.SpringbootEventApplication      : Starting SpringbootEventApplication using Java 21.0.6 with PID 17472 (C:\Users\NTPU\git\Springboot\target\classes started by NTPU in C:\Users\NTPU\git\Springboot)
+2025-06-05T17:33:47.844+08:00  INFO 17472 --- [springboot-event] [main] c.e.demo.SpringbootEventApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-06-05T17:33:48.193+08:00  INFO 17472 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T17:33:48.194+08:00  INFO 17472 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-05T17:33:48.213+08:00  INFO 17472 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventCategoriesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T17:33:48.214+08:00  INFO 17472 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T17:33:48.214+08:00  INFO 17472 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 JDBC repository interfaces.
+2025-06-05T17:33:48.220+08:00  INFO 17472 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T17:33:48.221+08:00  INFO 17472 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05T17:33:48.238+08:00  INFO 17472 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2025-06-05T17:33:48.497+08:00  INFO 17472 --- [springboot-event] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2025-06-05T17:33:48.506+08:00  INFO 17472 --- [springboot-event] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-05T17:33:48.506+08:00  INFO 17472 --- [springboot-event] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-05T17:33:48.533+08:00  INFO 17472 --- [springboot-event] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-05T17:33:48.533+08:00  INFO 17472 --- [springboot-event] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 668 ms
+2025-06-05T17:33:48.618+08:00  INFO 17472 --- [springboot-event] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05T17:33:48.658+08:00  INFO 17472 --- [springboot-event] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-05T17:33:48.679+08:00  INFO 17472 --- [springboot-event] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-05T17:33:48.838+08:00  INFO 17472 --- [springboot-event] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05T17:33:48.855+08:00  INFO 17472 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-05T17:33:48.949+08:00  INFO 17472 --- [springboot-event] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3982206a
+2025-06-05T17:33:48.950+08:00  INFO 17472 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-05T17:33:48.995+08:00  INFO 17472 --- [springboot-event] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-05T17:33:49.497+08:00  INFO 17472 --- [springboot-event] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05T17:33:49.499+08:00  INFO 17472 --- [springboot-event] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T17:33:50.095+08:00  INFO 17472 --- [springboot-event] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path '/'
+2025-06-05T17:33:50.099+08:00  INFO 17472 --- [springboot-event] [main] c.e.demo.SpringbootEventApplication      : Started SpringbootEventApplication in 2.486 seconds (process running for 2.803)
+2025-06-05T17:33:53.286+08:00  INFO 17472 --- [springboot-event] [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-05T17:33:53.287+08:00  INFO 17472 --- [springboot-event] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-05T17:33:53.287+08:00  INFO 17472 --- [springboot-event] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-05T17:41:00.619+08:00  INFO 17472 --- [springboot-event] [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-05T17:41:00.620+08:00  INFO 17472 --- [springboot-event] [RMI TCP Connection(15)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-05T17:41:00.630+08:00  INFO 17472 --- [springboot-event] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-05T17:41:00.632+08:00  INFO 17472 --- [springboot-event] [RMI TCP Connection(15)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T17:41:00.633+08:00  INFO 17472 --- [springboot-event] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-05T17:41:00.636+08:00  INFO 17472 --- [springboot-event] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-05T17:41:01.879+08:00  INFO 12888 --- [springboot-event] [main] c.e.demo.SpringbootEventApplication      : Starting SpringbootEventApplication using Java 21.0.6 with PID 12888 (C:\Users\NTPU\git\Springboot\target\classes started by NTPU in C:\Users\NTPU\git\Springboot)
+2025-06-05T17:41:01.880+08:00  INFO 12888 --- [springboot-event] [main] c.e.demo.SpringbootEventApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-06-05T17:41:02.221+08:00  INFO 12888 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T17:41:02.222+08:00  INFO 12888 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-05T17:41:02.241+08:00  INFO 12888 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventCategoriesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T17:41:02.242+08:00  INFO 12888 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T17:41:02.242+08:00  INFO 12888 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 JDBC repository interfaces.
+2025-06-05T17:41:02.248+08:00  INFO 12888 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T17:41:02.248+08:00  INFO 12888 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05T17:41:02.263+08:00  INFO 12888 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2025-06-05T17:41:02.521+08:00  INFO 12888 --- [springboot-event] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2025-06-05T17:41:02.529+08:00  INFO 12888 --- [springboot-event] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-05T17:41:02.530+08:00  INFO 12888 --- [springboot-event] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-05T17:41:02.555+08:00  INFO 12888 --- [springboot-event] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-05T17:41:02.555+08:00  INFO 12888 --- [springboot-event] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 655 ms
+2025-06-05T17:41:02.637+08:00  INFO 12888 --- [springboot-event] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05T17:41:02.666+08:00  INFO 12888 --- [springboot-event] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-05T17:41:02.683+08:00  INFO 12888 --- [springboot-event] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-05T17:41:02.834+08:00  INFO 12888 --- [springboot-event] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05T17:41:02.850+08:00  INFO 12888 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-05T17:41:02.945+08:00  INFO 12888 --- [springboot-event] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@38dbeb39
+2025-06-05T17:41:02.946+08:00  INFO 12888 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-05T17:41:02.990+08:00  INFO 12888 --- [springboot-event] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-05T17:41:03.486+08:00  INFO 12888 --- [springboot-event] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05T17:41:03.488+08:00  INFO 12888 --- [springboot-event] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T17:41:04.086+08:00  INFO 12888 --- [springboot-event] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path '/'
+2025-06-05T17:41:04.090+08:00  INFO 12888 --- [springboot-event] [main] c.e.demo.SpringbootEventApplication      : Started SpringbootEventApplication in 2.435 seconds (process running for 2.754)
+2025-06-05T17:41:11.929+08:00  INFO 12888 --- [springboot-event] [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-05T17:41:11.929+08:00  INFO 12888 --- [springboot-event] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-05T17:41:11.930+08:00  INFO 12888 --- [springboot-event] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-05T17:58:32.133+08:00  INFO 12888 --- [springboot-event] [RMI TCP Connection(28)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-05T17:58:32.134+08:00  INFO 12888 --- [springboot-event] [RMI TCP Connection(28)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-05T17:58:32.136+08:00  INFO 12888 --- [springboot-event] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-05T17:58:32.138+08:00  INFO 12888 --- [springboot-event] [RMI TCP Connection(28)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05T17:58:32.139+08:00  INFO 12888 --- [springboot-event] [RMI TCP Connection(28)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-05T17:58:32.142+08:00  INFO 12888 --- [springboot-event] [RMI TCP Connection(28)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-05T17:58:33.359+08:00  INFO 15928 --- [springboot-event] [main] c.e.demo.SpringbootEventApplication      : Starting SpringbootEventApplication using Java 21.0.6 with PID 15928 (C:\Users\NTPU\git\Springboot\target\classes started by NTPU in C:\Users\NTPU\git\Springboot)
+2025-06-05T17:58:33.360+08:00  INFO 15928 --- [springboot-event] [main] c.e.demo.SpringbootEventApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-06-05T17:58:33.694+08:00  INFO 15928 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T17:58:33.695+08:00  INFO 15928 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-05T17:58:33.714+08:00  INFO 15928 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventCategoriesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T17:58:33.715+08:00  INFO 15928 --- [springboot-event] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.EventRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-05T17:58:33.715+08:00  INFO 15928 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 JDBC repository interfaces.
+2025-06-05T17:58:33.721+08:00  INFO 15928 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-05T17:58:33.721+08:00  INFO 15928 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05T17:58:33.737+08:00  INFO 15928 --- [springboot-event] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2025-06-05T17:58:33.990+08:00  INFO 15928 --- [springboot-event] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2025-06-05T17:58:33.999+08:00  INFO 15928 --- [springboot-event] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-05T17:58:33.999+08:00  INFO 15928 --- [springboot-event] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-05T17:58:34.025+08:00  INFO 15928 --- [springboot-event] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-05T17:58:34.025+08:00  INFO 15928 --- [springboot-event] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 645 ms
+2025-06-05T17:58:34.107+08:00  INFO 15928 --- [springboot-event] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05T17:58:34.134+08:00  INFO 15928 --- [springboot-event] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-05T17:58:34.152+08:00  INFO 15928 --- [springboot-event] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-05T17:58:34.305+08:00  INFO 15928 --- [springboot-event] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05T17:58:34.322+08:00  INFO 15928 --- [springboot-event] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-05T17:58:35.698+08:00  WARN 15928 --- [springboot-event] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1045, SQLState: 28000
+2025-06-05T17:58:35.698+08:00 ERROR 15928 --- [springboot-event] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Access denied for user 'root'@'localhost' (using password: YES)
+2025-06-05T17:58:35.699+08:00  WARN 15928 --- [springboot-event] [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+org.hibernate.exception.GenericJDBCException: unable to obtain isolated JDBC connection [Access denied for user 'root'@'localhost' (using password: YES)] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:336) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.5.0.jar:3.5.0]
+	at com.example.demo.SpringbootEventApplication.main(SpringbootEventApplication.java:10) ~[classes/:na]
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:139) ~[HikariCP-6.3.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:368) ~[HikariCP-6.3.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:205) ~[HikariCP-6.3.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:483) ~[HikariCP-6.3.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571) ~[HikariCP-6.3.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:101) ~[HikariCP-6.3.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-6.3.0.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:483) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	... 35 common frames omitted
+
+2025-06-05T17:58:35.702+08:00 ERROR 15928 --- [springboot-event] [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2025-06-05T17:58:35.702+08:00  WARN 15928 --- [springboot-event] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2025-06-05T17:58:35.704+08:00  INFO 15928 --- [springboot-event] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-06-05T17:58:35.709+08:00  INFO 15928 --- [springboot-event] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-05T17:58:35.721+08:00 ERROR 15928 --- [springboot-event] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.5.0.jar:3.5.0]
+	at com.example.demo.SpringbootEventApplication.main(SpringbootEventApplication.java:10) ~[classes/:na]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.7.jar:6.2.7]
+	... 15 common frames omitted
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:191) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:186) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:408) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	... 30 common frames omitted
+

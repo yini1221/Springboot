@@ -47,7 +47,7 @@ public class EventServiceImpl implements EventService{
 				.orElseThrow(() -> new EventNotFoundException("查詢失敗: 活動編號 " + eventId + " 不存在"));
 		return eventMapper.toDto(event);
 	}
-
+	
 	@Override
 	public EventDto addEventAndReturn(EventDto eventDto) {
 		Event event = eventMapper.toEntity(eventDto);

@@ -8,13 +8,16 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class EventCategoryDto {
 
-	@Id
 	private Integer id;
 
 	private String name;
 
 	public EventCategoryDto(Integer id, String categoryName) {
 		this.id = id;
+		this.name = categoryName;
+	}
+
+	public EventCategoryDto(String categoryName) {
 		this.name = categoryName;
 	}
 		
