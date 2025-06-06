@@ -15,6 +15,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class EventDto {
 	
+	@JsonProperty(access = Access.READ_ONLY)
 	private Integer id;
 	
 	@NotEmpty

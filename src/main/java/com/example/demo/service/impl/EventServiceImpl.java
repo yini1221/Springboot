@@ -1,6 +1,5 @@
 package com.example.demo.service.impl;
 
-import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
@@ -11,13 +10,13 @@ import org.springframework.stereotype.Service;
 import com.example.demo.exception.CategoryNotFoundException;
 import com.example.demo.exception.EventNotFoundException;
 import com.example.demo.mapper.EventMapper;
-import com.example.demo.model.dto.EventCategoryDto;
 import com.example.demo.model.dto.EventDto;
 import com.example.demo.model.entity.EventCategories;
 import com.example.demo.model.entity.Event;
 import com.example.demo.repository.EventCategoriesRepository;
 import com.example.demo.repository.EventRepository;
 import com.example.demo.service.EventService;
+
 @Service
 public class EventServiceImpl implements EventService{
 
@@ -56,13 +55,6 @@ public class EventServiceImpl implements EventService{
 	}
 
 	@Override
-	public void addEvent(String title, String description, String location, LocalDateTime startTime,
-			LocalDateTime endTime, Integer maxParticipants, String imageBase64, EventCategoryDto eventCategory) {
-		EventDto eventDto = new EventDto(title, description, location, startTime, endTime, maxParticipants, imageBase64, eventCategory);
-		addEventAndReturn(eventDto);
-	}
-
-	@Override
 	public void updateEvent(Integer eventId, EventDto eventDto) {
 		Optional<Event> optEvent = eventRepository.findById(eventId);
 		if(optEvent.isEmpty()) {
@@ -76,12 +68,6 @@ public class EventServiceImpl implements EventService{
 	            .orElseThrow(() -> new CategoryNotFoundException("查無此分類: " + categoryId));	 
 	    event.setEventCategories(category);
 		eventRepository.save(event);
-	}
-
-	@Override
-	public void updateEvent(Integer eventId, String title, String description, String location, LocalDateTime startTime, LocalDateTime endTime, Integer maxParticipants, String imageBase64, EventCategoryDto eventCategory) {
-		EventDto eventDto = new EventDto(eventId, title, description, location, startTime, endTime, maxParticipants, imageBase64, eventCategory);
-		updateEvent(eventId, eventDto);
 	}
 
 	@Override

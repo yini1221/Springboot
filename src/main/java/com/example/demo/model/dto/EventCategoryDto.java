@@ -1,5 +1,8 @@
 package com.example.demo.model.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonProperty.Access;
+
 import jakarta.persistence.Id;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -7,7 +10,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class EventCategoryDto {
-
+	
+	@JsonProperty(access = Access.READ_ONLY)
 	private Integer id;
 
 	private String name;
